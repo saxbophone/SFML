@@ -8,6 +8,7 @@ jobs:
     runs-on: ${{ matrix.platform.os }}
 
     strategy:
+      fail-fast: false
       matrix:
         platform:
         - { name: Windows VS2017, os: windows-2016   }
